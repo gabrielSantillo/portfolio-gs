@@ -112,17 +112,17 @@ img {
     padding: 2rem 0 4rem;
 }
 
-.section__tittle {
+.section__title {
     font-size: var(--h1-font-size);
 }
 
-.section__subtittle {
+.section__subtitle {
     display: block;
     font-size: var(--small-font-size);
     margin-bottom: var(--mb-3);
 }
 
-.section__tittle, .section__subtittle {
+.section__title, .section__subtitle {
     text-align: center;
 }
 
