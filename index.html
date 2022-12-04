@@ -12,7 +12,7 @@
     />
 
     <!-- SWIPPER CSS -->
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
 
     <!-- CSS -->
     <link rel="stylesheet" href="/css/style.css" />
@@ -22,47 +22,61 @@
   <body>
     <!-- HEADER -->
     <header class="header" id="header">
-      <nav class="nav container">
-        <a href="#" class="nav__logo">Gabriel Santillo</a>
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Alexa</a>
 
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list grid">
-            <li class="nav__item">
-              <a href="#" class="nav__link">
-                <i class="uil uil-estate" class="nav__icon"></i> Home
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#about" class="nav__link">
-                <i class="uil uil-user" class="nav__icon"></i> About
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#skills" class="nav__link">
-                <i class="uil uil-file-alt" class="nav__icon"></i> Skills
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#portfolio" class="nav__link">
-                <i class="uil uil-scenery" class="nav__icon"></i> Portfolio
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#contact" class="nav__link">
-                <i class="uil uil-message" class="nav__icon"></i> Contact Me
-              </a>
-            </li>
-          </ul>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class="uil uil-estate nav__icon"></i> Home
+                        </a>
+                    </li>
 
-          <i class="uil uil-times nav__close" id="nav-close"></i>
-        </div>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class="uil uil-user nav__icon"></i> About
+                        </a>
+                    </li>
 
-        <div class="nav__btns">
-          <div class="nav__toggle" id="nav-toggle">
-            <i class="uil uil-apps"></i>
-          </div>
-        </div>
-      </nav>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="uil uil-file-alt nav__icon"></i> Skills
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">
+                            <i class="uil uil-briefcase-alt nav__icon"></i> Services
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#portfolio" class="nav__link">
+                            <i class="uil uil-scenery nav__icon"></i> Portfolio
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="uil uil-message nav__icon"></i> Contactme
+                        </a>
+                    </li>
+
+                </ul>
+                
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>
+
+            <div class="nav__btns">
+                <!-- Theme change button -->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <!-- MAIN -->
@@ -423,10 +437,10 @@
         <h2 class="section__title">Portfolio</h2>
         <span class="section__subtitle">Most recent work</span>
 
-        <div class="portfolio__container container">
-          <div>
+        <div class="portfolio__container container mySwiper">
+          <div class="swiper-wrapper">
             <!-- PORTFOLIO 1 -->
-            <div class="portfolio__content grid">
+            <div class="portfolio__content grid swiper-slide">
               <img src="/img/portfolio1.jpg" alt="" class="portfolio__img" />
 
               <div class="portfolio__data">
@@ -445,11 +459,11 @@
             </div>
 
             <!-- PORTFOLIO 2 -->
-            <div class="portfolio__content grid">
+            <div class="portfolio__content grid swiper-slide">
               <img src="/img/portfolio2.jpg" alt="" class="portfolio__img" />
 
               <div class="portfolio__data">
-                <h3 class="portfolio__title">Foodie Backend</h3>
+                <h3 class="portfolio__title">Foodie Banckend</h3>
                 <p class="portfolio__description">
                   Backend application that simulates an order app.
                 </p>
@@ -464,13 +478,13 @@
             </div>
 
             <!-- PORTFOLIO 3 -->
-            <div class="portfolio__content grid">
+            <div class="portfolio__content grid swiper-slide">
               <img src="/img/portfolio3.jpg" alt="" class="portfolio__img" />
 
               <div class="portfolio__data">
                 <h3 class="portfolio__title">MySpring Intercambio System</h3>
                 <p class="portfolio__description">
-                  Full Stack application that helps the agency to control and organize better theur students.
+                  Full Stack application for a students agency.
                 </p>
                 <a
                   href="#"
@@ -482,6 +496,10 @@
               </div>
             </div>
           </div>
+
+                <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
         </div>
       </section>
 
@@ -494,7 +512,7 @@
     <!-- SCROLL TOP -->
 
     <!-- SWIPPER JS -->
-    <script src=""></script>
+    <script src="/js/swiper-bundle.min.js"></script>
 
     <!-- MAIN JS -->
     <script src="/js/main.js"></script>
