@@ -598,7 +598,9 @@ img {
 }
 
 .portfolio__img {
+  height: 265px;
   width: 265px;
+  object-fit: cover;
   border-radius: .5rem;
   justify-self: center;
 }
