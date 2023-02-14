@@ -943,6 +943,7 @@ img {
   }
 
   .portfolio__img {
+    height: 280px;
     width: 320px;
   }
 
